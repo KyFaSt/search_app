@@ -1,0 +1,29 @@
+<h1>Listing pirates</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Ship</th>
+      <th>Description</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @pirates.each do |pirate| %>
+      <tr>
+        <td><%= pirate.name %></td>
+        <td><%= pirate.ship %></td>
+        <td><%= pirate.description %></td>
+        <td><%= link_to 'Show', pirate %></td>
+        <td><%= link_to 'Edit', edit_pirate_path(pirate) %></td>
+        <td><%= link_to 'Destroy', pirate, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Pirate', new_pirate_path %>

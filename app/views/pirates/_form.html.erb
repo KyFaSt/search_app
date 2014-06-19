@@ -1,0 +1,29 @@
+<%= form_for(@pirate) do |f| %>
+  <% if @pirate.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@pirate.errors.count, "error") %> prohibited this pirate from being saved:</h2>
+
+      <ul>
+      <% @pirate.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :name %><br>
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label :ship %><br>
+    <%= f.text_field :ship %>
+  </div>
+  <div class="field">
+    <%= f.label :description %><br>
+    <%= f.text_field :description %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
