@@ -1,7 +1,8 @@
-# This file should contain all the record creation needed to seed the database with its default values.
-# The data can then be loaded with the rake db:seed (or created alongside the db with db:setup).
-#
-# Examples:
-#
-#   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
-#   Mayor.create(name: 'Emanuel', city: cities.first)
+Puts = "Adding pirates to your database"
+
+pirates = Pirate.create([
+  { name: 'Dread Pirate Roberts', ship: 'As You Wish', description: 'Devilishly handsome, highly resistant to iocaine powder.'},
+  { name: 'William Kidd', ship: 'Adventure Galley', description: 'Somewhat unreliable pirate hunter. Abandoned his ship. Executed in 1701'},
+  { name: 'Blackbeard', ship: 'Queen Anne\'s revenge', description: 'Blockaded the port of Charleston. May have deliberately abandoned ship to kill of some crew to keep more treasure'},
+  { name: 'Hector Barbossa', ship: 'Black Pearl', description: 'Prone to mutiny. Tendency to be undead. Likes jokes. Has his own monkey'}
+  ])
