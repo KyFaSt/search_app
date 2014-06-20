@@ -1,3 +1,12 @@
+<h1> Search </h1>
+
+<%= form_tag('/pirates', method: :get) do %>
+  <p>
+    <%= text_field_tag(:search) %>
+    <%= submit_tag("Search") %>
+  </p>
+<% end %>
+
 <h1>Listing pirates</h1>
 
 <table>
