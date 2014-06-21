@@ -20,3 +20,18 @@ This app is a simple jumping-off point for learning about simple search in ruby 
 3. `Bundle Install` to install gems & dependencies
 4. `rake db:setup` to create database, run migrations & seed database (if this step fails ensure you have postgres running)
 5. `rails server` to ensure everything is in proper working condition
+
+##Branches
+
+Because this app is intended for educational purposes, branches are maintained
+for feature steps of the process:
+
+* `1_set_up_simple_search` contains code for a simple search on one column in 
+one model
+* `2_set_up_multi-col_insensitive_search` builds on the previous branch and 
+contains code for a multi column, case-insensitive search
+* `3_set_up_advanced_postgres_search` builds on the previous branch and contains
+code for a search that takes advantage of Postgres' full-text search & search
+result rank
+
+
