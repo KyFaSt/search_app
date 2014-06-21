@@ -18,5 +18,5 @@ This app is a simple jumping-off point for learning about simple search in ruby 
 	`postgres -D /usr/local/pgsql/data`
 	Detailed instructions can be found [here](http://www.postgresql.org/docs/9.3/static/server-start.html),  OSX users may be interested in using [Postgres.App](http://postgresapp.com/)
 3. `Bundle Install` to install gems & dependencies
-4.  `rake db:setup` to create database, run migrations & seed database (if this step fails ensure you have postgres running)
+4. `rake db:setup` to create database, run migrations & seed database (if this step fails ensure you have postgres running)
 5. `rails server` to ensure everything is in proper working condition
