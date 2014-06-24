@@ -9,6 +9,7 @@ This app is a simple jumping-off point for learning about simple search in ruby 
 * Ruby 2.1.0 
 * Rails 4.1.1
 * [Postgresql](http://www.postgresql.org/)
+  * OSX users with homebrew installed may `brew install postgresql`
 
 
 ##Setup
