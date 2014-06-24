@@ -13,4 +13,5 @@ class Pirate < ActiveRecord::Base
     else
       all
     end
+  end
 end
